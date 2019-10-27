@@ -37,3 +37,29 @@ flatten (to flatten any array)
 
 
 # ruby documentation        https://ruby-doc.org/
+
+# Ruby has another type of value called symbols. Symbols are immutable. 
+# They will often be used as substitutes of data that we know we wont change. 
+# The memory print of symbols is much lower than Strings hence prefered. 
+
+str = "hello"   # the string 
+sym = :hello    # the symbol
+
+# Use them as keys for your hashes.
+
+my_bootcamp = { name:"App Academy", color:"red", locations:["NY", "SF", "ONLINE"] }
+p my_bootcamp           # => {:name=>"App Academy", :color=>"red", :locations=>["NY", "SF", "ONLINE"]}
+p my_bootcamp[:color]   #=> "red
+
+
+sym = :Hello
+
+
+# Let's make num an optional parameter.
+# By default, num will have the value of 1
+def repeat(message, num=1)
+    message * num
+end
+
+p repeat("hi") # => "hi"
+p repeat("hi", 3) # => "hihihi"
