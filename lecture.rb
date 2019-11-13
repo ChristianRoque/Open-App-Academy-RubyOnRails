@@ -202,4 +202,18 @@
 #     array
 # end
 
-# hello
+
+# /example_project
+#   ├── lib
+#   │   ├── add.rb
+#   │   └── prime.rb
+#   └── spec
+#       ├── add_spec.rb
+#       └── prime_spec.rb
+
+# To use RSpec, we must follow this structure. We need folders with the 
+# literal names lib and spec as direct children of the example_project folder.
+# The test files inside of the /spec folder must end with _specin their names.
+
+
+# buenas 
